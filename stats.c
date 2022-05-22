@@ -28,6 +28,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     }
     
     else 
+    {
           s.average =  NAN;
           s.min =  NAN;
           s.max = NAN; 
@@ -35,7 +36,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
 	return s;
 
 
-
+}
 
 
 int emailAlertCallCount = 0;
