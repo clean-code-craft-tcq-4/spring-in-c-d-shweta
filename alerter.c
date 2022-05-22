@@ -1,6 +1,8 @@
 #include "alerter.h"
 #include "stats.h"
 
+int emailAlertCallCount = 0;
+int ledAlertCallCount = 0;
 
 void check_and_alert(const float maxThreshold, alerter_funcptr alerters, Stats computedStats){
   
