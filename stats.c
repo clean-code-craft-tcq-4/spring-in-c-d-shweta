@@ -1,5 +1,5 @@
 #include "stats.h"
-#include "Math.h"
+#include "math.h"
 
 struct Stats compute_statistics(const float* numberset, int setlength) {
     struct Stats s;
@@ -31,7 +31,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
           s.min =  NAN;
           s.max = NAN; 
     }
-
+	return s;
 
 
 
